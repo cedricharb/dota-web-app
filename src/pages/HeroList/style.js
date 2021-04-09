@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ListContainer = styled.div`
   flex: 1;
   justify-content: center;
+  background-color: #161b22;
 `;
 
 export const InfoBoxContainer = styled.div`
@@ -11,5 +12,5 @@ export const InfoBoxContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-horizontal: 50px;
+  justify-content: space-around;
 `;

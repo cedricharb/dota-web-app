@@ -11,8 +11,7 @@ const HeroListContainer = (props) => {
       .then((result) => setHeroList(result))
       .catch((error) => console.error(error))
       .finally(() => setLoading(false));
-  });
-  console.log(heroList);
+  }, []);
   return <HeroListComponent heroList={heroList} laoding={loading} />;
 };
 

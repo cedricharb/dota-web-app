@@ -9,6 +9,14 @@ export const InfoBoxContainer = styled.div`
   background: grey;
   border: 2px solid red;
   background-image: ${(props) => props.background};
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  ${(props) =>
+    props.highlight &&
+    css`
+      align-items: flex-end;
+    `}
 `;
 
 export const Overlay = styled.div`
@@ -26,6 +34,7 @@ export const Overlay = styled.div`
 `;
 
 export const Title = styled.span`
+  display: block;
   text-align: center;
   color: white;
   ${(props) =>
@@ -34,7 +43,7 @@ export const Title = styled.span`
       text-align: left;
       font-weight: bold;
       color: white;
-      font-size: 18;
+      font-size: 18px;
     `}
 `;
 

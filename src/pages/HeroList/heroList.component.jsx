@@ -7,13 +7,13 @@ const HeroListComponent = (props) => {
   const heroes = props.heroList;
   const mappedHeroes = heroes.map((hero) => (
     <InfoBox
+      key={hero.id}
       highlight
-      background={`url("https://api.opendota.com")${+hero.img}`}
+      background={`url("https://api.opendota.com${hero.img}")`}
       title={hero.localized_name}
       subtitle={hero.roles.join(", ")}
     />
   ));
-  console.log();
   return (
     <ListContainer>
       {props.Loading ? (
