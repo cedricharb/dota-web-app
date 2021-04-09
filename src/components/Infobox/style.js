@@ -20,7 +20,11 @@ export const InfoBoxContainer = styled.div`
 `;
 
 export const Overlay = styled.div`
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    rgb(0 0 0 / 0%),
+    rgb(0 0 0 / 20%) 10%,
+    rgb(0 0 0 / 90%) 100%
+  );
   flex: 1;
   justify-content: center;
   padding: 10px;
