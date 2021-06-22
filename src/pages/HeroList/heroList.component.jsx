@@ -10,7 +10,7 @@ const HeroListComponent = (props) => {
       key={hero.id}
       id={hero.id}
       highlight
-      background={`url("https://api.opendota.com${hero.img}")`}
+      background={`https://api.opendota.com${hero.img}`}
       title={hero.localized_name}
       subtitle={hero.roles.slice(0, 2).join(", ")}
     />

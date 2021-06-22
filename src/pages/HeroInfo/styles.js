@@ -23,7 +23,6 @@ export const StatsContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: grey;
 `;
 
 export const StatText = styled.span`
@@ -35,4 +34,13 @@ export const InfoBoxContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  display: flex;
+`;
+
+export const ScreenContainer = styled.div`
+  background-color: #161b22;
+`;
+
+export const SpinnerContainer = styled.div`
+  backgroud-color: #161b22;
 `;

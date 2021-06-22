@@ -1,14 +1,23 @@
-import "./App.css";
-import HeroInfoScreen from "./pages/HeroInfo";
-import HeroListScreen from "./pages/HeroList";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
+import { fetchData } from "../src/redux/actions/list.actions";
+import HeroInfoScreen from "./pages/HeroInfo";
+import HeroListScreen from "./pages/HeroList";
+import "./App.css";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
+
   return (
     <Router>
       <Switch>

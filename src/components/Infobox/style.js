@@ -7,8 +7,8 @@ export const InfoBoxContainer = styled.div`
   border-radius: 10px;
   overflow: hidden;
   background: grey;
-  border: 2px solid red;
-  background-image: ${(props) => props.background};
+  border: 2px solid #eb3d06;
+  background-image: url(${(props) => props.background});
   background-size: cover;
   background-position: center;
   display: flex;
@@ -29,15 +29,16 @@ export const Overlay = styled.div`
   justify-content: center;
   padding: 10px;
   overflow: hidden;
-
-  ${(props) =>
-    props.highlight &&
-    css`
-      justify-content: flex-end;
-    `}
+  align-items: center
+    ${(props) =>
+      props.highlight &&
+      css`
+        justify-content: flex-end;
+        align-items: flex-end;
+      `};
 `;
 
-export const Title = styled.span`
+export const Title = styled.p`
   display: block;
   text-align: center;
   color: white;
@@ -51,8 +52,14 @@ export const Title = styled.span`
     `}
 `;
 
-export const Subtitle = styled.span`
-  text-align: left;
+export const Subtitle = styled.p`
+  text-align: center;
   color: white;
   font-size: 12;
+
+  ${(props) =>
+    props.highlight &&
+    css`
+      text-align: left;
+    `}
 `;
