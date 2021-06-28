@@ -39,8 +39,13 @@ export const InfoBoxContainer = styled.div`
 
 export const ScreenContainer = styled.div`
   background-color: #161b22;
+  min-height: 100vh;
 `;
 
 export const SpinnerContainer = styled.div`
-  backgroud-color: #161b22;
+  background-color: #161b22;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
